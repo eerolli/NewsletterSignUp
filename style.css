@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/Roboto-Bold.ttf);
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+:root{
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
+}
+html{
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body{
+    min-height: 100vh;
+}
+
+.wrapper{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.paragraph{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    padding: 15px;
+    border-radius: 0.7rem;
+}
+
+#email{
+    border: 1px solid var(--Grey);
+}
+
+#subscription{
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+}
+
+.hidden{
+    display: none;
+}

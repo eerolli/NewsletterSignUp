@@ -27,19 +27,45 @@ body{
     justify-content: space-between;
 }
 
+.headline{
+    font-weight: 700;
+    color: var(--Dark-Slate-Grey);
+}
+
 .paragraph{
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
+    color: var(--Charcoal-Grey);
 }
 
 ul{
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 1rem 0 0;
+    padding: 0;
+}
+
+.list-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem; 
 }
 
 form{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-top: 2rem;
+}
+
+label{
+    color: var(--Dark-Slate-Grey);
+    font-weight: 700;
+    font-size: 12px;
 }
 
 input{
@@ -54,6 +80,7 @@ input{
 #subscription{
     background-color: var(--Dark-Slate-Grey);
     color: var(--White);
+    font-weight: 700;
 }
 
 .hidden{
